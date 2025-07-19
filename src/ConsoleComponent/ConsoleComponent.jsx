@@ -33,8 +33,6 @@ export default function ConsolePortfolio() {
             components={{
               p: ({ node, ...props }) => <p className="text-gray-300" {...props} />,
               li: ({ node, ...props }) => <li className="text-gray-300 ml-4 list-disc" {...props} />,
-              h1: ({ node, ...props }) => <h1 className="text-green-400 text-lg font-bold" {...props} />,
-              h2: ({ node, ...props }) => <h2 className="text-green-300 text-base font-semibold" {...props} />,
               code: ({ node, ...props }) => <code className="bg-gray-800 text-gray-200 px-1 rounded" {...props} />,
             }}
           >
