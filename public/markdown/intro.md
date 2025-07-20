@@ -1,13 +1,11 @@
-# Help
+# Welcome!
 
-Available commands:
+Hi this is Pritom Das, aka _pritomash_
 
- `intro` — A brief introduction about me
- `projects` — View my major projects
- `education` — See my academic background
- `about` — Learn more about me
- `aciv` - See my achievements
- `clear` — Clear the console
+B. Sc. on Computer Science and Engineering, SUST ( 5th Semester )
+Volunteer Web-dev and Maintainer at Moharramun Nessa Maternity Hospital
+
+I want to become a mathematician. A cool one!
 
 
 

@@ -3,7 +3,7 @@ import ProfileSidebar from "../ProfileSidebar/ProfileSidebar.jsx"; // Adjust the
 import Markdown from "react-markdown";
 
 
-const markdownCommands = ["home", "projects", "education", "about", "help"];
+const markdownCommands = ["intro", "projects", "education", "about", "help", "aciv"];
 
 export default function ConsolePortfolio() {
   const [history, setHistory] = useState(["Type 'help' to get started."]);
@@ -20,7 +20,7 @@ export default function ConsolePortfolio() {
     if (!cmd) return;
     // let output;
     if (cmd === "clear") {
-      setHistory([]);
+      setHistory(["Type 'help' to get started."]);
       return;
     }
     if (markdownCommands.includes(cmd.toLowerCase())) {
@@ -34,6 +34,9 @@ export default function ConsolePortfolio() {
               p: ({ node, ...props }) => <p className="text-gray-300" {...props} />,
               li: ({ node, ...props }) => <li className="text-gray-300 ml-4 list-disc" {...props} />,
               code: ({ node, ...props }) => <code className="bg-gray-800 text-gray-200 px-1 rounded" {...props} />,
+              // eslint-disable-next-line
+              a: ({ node, ...props }) => (<a className="text-blue-400 hover:underline" {...props} />),
+              
             }}
           >
             {text}
@@ -77,7 +80,7 @@ export default function ConsolePortfolio() {
       <ProfileSidebar />
       <div className="flex-1 overflow-y-auto whitespace-pre-wrap mb-0">
         <div className="max-w-7xl mx-auto">
-          <div className="overflow-y-auto h-[70vh] whitespace-pre-wrap">
+          <div className="overflow-y-auto h-[90vh] whitespace-pre-wrap">
             {history.map((line, idx) => (
               <div key={idx}>{line}</div>
             ))}
@@ -93,6 +96,7 @@ export default function ConsolePortfolio() {
               autoFocus
             />
           </div>
+          <div><p className="text-green-500 ml-2"> press up and down arrow keys to get previous commands </p></div>
         </div>
       </div>
     </div>

@@ -1,13 +1,8 @@
-# Help
+**BUET Capture The Flag 2023 - 10th position**
+Team: Null_Pointer
 
-Available commands:
 
- `intro` — A brief introduction about me
- `projects` — View my major projects
- `education` — See my academic background
- `about` — Learn more about me
- `aciv` - See my achievements
- `clear` — Clear the console
+More achievements coming soon :) 
 
 
 
